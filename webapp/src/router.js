@@ -42,7 +42,7 @@ export default new Router({
           path: "/portfolio",
           name: "components",
           components: {
-            
+            header: AppHeader,
             default: Portfolio,
             footer: AppFooter
           }
