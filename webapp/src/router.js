@@ -1,62 +1,53 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Hero from "./views/components/Hero.vue";
+import Portfolio from "./views/components/Portfolio.vue";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
-import Components from "./views/Components.vue";
-import Landing from "./views/Landing.vue";
-import Login from "./views/Login.vue";
-import Register from "./views/Register.vue";
-import Profile from "./views/Profile.vue";
+import QuemSomos from "./views/components/QuemSomos.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  linkExactActiveClass: "active",
+  mode: "history",
+  linkActiveClass: "open",
   routes: [
     {
       path: "/",
-      name: "components",
-      components: {
-        header: AppHeader,
-        default: Components,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/landing",
-      name: "landing",
-      components: {
-        header: AppHeader,
-        default: Landing,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/login",
-      name: "login",
-      components: {
-        header: AppHeader,
-        default: Login,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/register",
-      name: "register",
-      components: {
-        header: AppHeader,
-        default: Register,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/profile",
-      name: "profile",
-      components: {
-        header: AppHeader,
-        default: Profile,
-        footer: AppFooter
-      }
+      component: () => import("./App"), //webpackChunkName app
+      redirect: "/inicio",
+      meta: { requiresAuth: false },
+      children: [
+        {
+          path: "/inicio",
+          name: "components",
+          components: {
+            header: AppHeader,
+            default: Hero,
+            footer: AppFooter
+          }
+        },
+
+        {
+          path: "/sobre-nos",
+          name: "components",
+          components: {
+            header: AppHeader,
+            default: QuemSomos,
+            footer: AppFooter
+          }
+        },
+
+        {
+          path: "/portfolio",
+          name: "components",
+          components: {
+            
+            default: Portfolio,
+            footer: AppFooter
+          }
+        },
+      ],
     }
   ],
   scrollBehavior: to => {
