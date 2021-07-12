@@ -56,7 +56,7 @@
               </div>
             </div>
             <div class="text-center mt-5">
-              <h3>Fast Digital</h3>
+              <h3>Studio Web</h3>
               <div class="h6 font-weight-300">
                 <i class="ni location_pin mr-1"></i>Porto Alegre, Rio Grande do
                 Sul
@@ -78,7 +78,7 @@
                     Somos uma agência digital especializada no desenvolvimento
                     de sites, apps e sistemas Web, ajudando sua empresa a ter
                     maior visibilidade dentro do mercado.<br /><br />
-                    Nós da Fast, dispomos de sólidos conhecimentos e
+                    Nós da Studio Web Digital, dispomos de sólidos conhecimentos e
                     planejamento para projetos Web e Mobile, e contamos com um
                     time capacitado e forte para fazer o seu negócio bombar
                     ainda mais!

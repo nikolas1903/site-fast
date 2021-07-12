@@ -36,7 +36,7 @@
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/f4stdigital"
+                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/studioweb.digital"
                        target="_blank" rel="noopener" data-toggle="tooltip" title="Siga-nos no Instagram!">
                         <i class="fa fa-instagram"></i>
                         <span class="nav-link-inner--text d-lg-none">Instagram</span>
@@ -44,7 +44,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://twitter.com/f4stdigital" target="_blank" rel="noopener"
+                    <a class="nav-link nav-link-icon" href="https://twitter.com/studioweb.digital" target="_blank" rel="noopener"
                        data-toggle="tooltip" title="Siga-nos no Twitter!">
                         <i class="fa fa-twitter-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Twitter</span>
@@ -52,7 +52,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/f4stdigital" target="_blank" rel="noopener"
+                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/studioweb.digital" target="_blank" rel="noopener"
                        data-toggle="tooltip" title="Siga-nos no Facebook!">
                         <i class="fa fa-facebook-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Facebook</span>
@@ -65,7 +65,7 @@
                 <span class="btn-inner--icon">
                   <i class="fa fa-headphones mr-2"></i>
                 </span>
-                        <span class="nav-link-inner--text">Fale Com a Fast</span>
+                        <span class="nav-link-inner--text">Fale conosco!</span>
                     </a>
                 </li>
             </ul>

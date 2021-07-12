@@ -8,17 +8,17 @@
                     <h4 class="mb-0 font-weight-light">Vamos manter contato por outras plataformas?</h4>
                 </div>
                 <div class="col-lg-6 text-lg-center btn-wrapper">
-                    <a target="_blank" rel="noopener" href="https://instagram.com/f4stdigital"
+                    <a target="_blank" rel="noopener" href="https://instagram.com/studioweb.digital"
                        class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg" data-toggle="tooltip"
                        data-original-title="Siga a gente!">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a target="_blank" rel="noopener" href="https://twitter.com/f4stdigital"
+                    <a target="_blank" rel="noopener" href="https://twitter.com/studioweb.digital"
                        class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip"
                        data-original-title="Siga a gente!">
                         <i class="fa fa-twitter"></i>
                     </a>
-                    <a target="_blank" rel="noopener" href="https://www.facebook.com/f4stdigital"
+                    <a target="_blank" rel="noopener" href="https://www.facebook.com/studioweb.digital"
                        class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip"
                        data-original-title="Siga a gente!">
                         <i class="fa fa-facebook-square"></i>
@@ -30,16 +30,16 @@
                 <div class="col-md-6">
                     <div class="copyright">
                         &copy; {{year}}
-                        <a href="https://www.fast-digital.com" target="_blank" rel="noopener">Fast Digital - Desenvolvimento de Softwares</a>
+                        <a href="https://studioweb.digital" target="_blank" rel="noopener">Studio Web Digital - Desenvolvimento de Softwares</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
-                            <a href="https://www.fast-digital.com" class="nav-link" target="_blank" rel="noopener">Fast Digital</a>
+                            <a href="https://studioweb.digital" class="nav-link" target="_blank" rel="noopener">Studio Web Digital</a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://www.fast-digital.com/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</a>
+                            <a href="https://studioweb.digital/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</a>
                         </li>
                     </ul>
                 </div>
