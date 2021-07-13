@@ -25,11 +25,13 @@
             </div>
 
             <div class="mt-4 py-5">
-              <form action="https://google.com" method="POST">
+              <form action="https://api.staticforms.xyz/submit" method="POST">
+              <input type="hidden" name="accessKey" value="eb172090-6ae5-4b51-9759-bdf00d2a8de0"> 
+              <input type="hidden" name="redirectTo" value="https://sitestudioweb.herokuapp.com/">
                 <b-row>
                   <b-col md="6">
                     <b-form-group
-                      name="nome"
+                      name="Nome"
                       type="text"
                       id="fieldset-1"
                       label="Nome Completo:"
@@ -37,9 +39,8 @@
                     >
                       <b-form-input
                         id="input-1"
-                        v-model="nome"
-                        :state="state"
-                        trim
+                        type="text" 
+                        name="$name"
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -56,9 +57,8 @@
                     >
                       <b-form-input
                         id="input-1"
-                        v-model="cpf"
-                        :state="state"
-                        trim
+                        name="$cpf"
+                        type="text" 
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -73,9 +73,8 @@
                     >
                       <b-form-input
                         id="input-1"
-                        v-model="celular"
-                        :state="state"
-                        trim
+                        name="$celular"
+                        type="text" 
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -90,9 +89,8 @@
                     >
                       <b-form-input
                         id="input-1"
-                        v-model="email"
-                        :state="state"
-                        trim
+                        type="text" 
+                        name="email"
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -107,9 +105,8 @@
                     >
                       <b-form-input
                         id="input-1"
-                        v-model="ramo"
-                        :state="state"
-                        trim
+                        name="$ramo"
+                        type="text"
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -124,9 +121,8 @@
                     >
                       <b-form-input
                         id="input-1"
-                        v-model="empresa"
-                        :state="state"
-                        trim
+                        name="$empresa"
+                        type="text"
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -135,8 +131,8 @@
                     <b-form-group label="Templates Preferidos:">
                       <b-form-checkbox-group
                         id="checkboxTemplates"
-                        v-model="selected"
-                        name="templates"
+                        name="$templates"
+                        type="text"
                       >
                         <b-form-checkbox value="vegas"
                           >Template Las Vegas</b-form-checkbox
@@ -159,8 +155,7 @@
                       <b-form-textarea
                         id="textarea"
                         type="text"
-                        name="sugestao"
-                        v-model="sugestao"
+                        name="$sugestao"
                         placeholder="Escreva algo..."
                         rows="5"
                         max-rows="6"
