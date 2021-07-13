@@ -25,7 +25,6 @@ import Argon from "./plugins/argon-kit";
 import './registerServiceWorker'
 import { BootstrapVue } from 'bootstrap-vue'
 import { BForm } from 'bootstrap-vue'
-
 import VMask from "v-mask";
 Vue.use(VMask);
 
@@ -37,6 +36,11 @@ Vue.component('b-form', BForm)
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
+
+
+
+
+
 
 
 

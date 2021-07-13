@@ -7,6 +7,7 @@ import AppFooter from "./layout/AppFooter";
 import SobreNos from "./views/components/SobreNos.vue";
 import FaleConosco from "./views/components/FaleConosco.vue";
 import Orcamento from "./views/components/Orcamento.vue"
+import Sucesso from "./views/components/Sucesso.vue";
 
 Vue.use(Router);
 
@@ -66,6 +67,16 @@ export default new Router({
           components: {
             header: AppHeader,
             default: Orcamento,
+            footer: AppFooter
+          }
+        },
+
+        {
+          path: "/sucesso",
+          name: "components",
+          components: {
+            header: AppHeader,
+            default: Sucesso,
             footer: AppFooter
           }
         },
