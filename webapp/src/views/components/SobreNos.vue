@@ -95,10 +95,10 @@
                       </template>
 
                       <p class="description">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget elit eget metus dignissim pharetra. Nam condimentum velit justo, et bibendum nisi semper a. Sed interdum ut sapien id varius. Donec scelerisque suscipit justo. Sed et urna purus. Mauris iaculis aliquam mi, eget molestie velit ornare quis. Ut congue commodo neque, sit amet consequat ex laoreet a. Praesent condimentum hendrerit nisi sagittis tincidunt.
                       </p>
                       <p class="description">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget elit eget metus dignissim pharetra. Nam condimentum velit justo, et bibendum nisi semper a. Sed interdum ut sapien id varius. Donec scelerisque suscipit justo. Sed et urna purus. Mauris iaculis aliquam mi, eget molestie velit ornare quis. Ut congue commodo neque, sit amet consequat ex laoreet a. Praesent condimentum hendrerit nisi sagittis tincidunt.
                       </p>
                     </tab-pane>
 
@@ -108,7 +108,7 @@
                       </template>
 
                       <p class="description">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Maecenas metus dui, placerat sit amet imperdiet ut, feugiat vel erat. Nulla ut neque dolor. Aliquam ac justo in nulla rutrum dapibus. Maecenas lacinia ligula non risus commodo vehicula. Etiam efficitur accumsan lectus. Vestibulum quis massa feugiat turpis fringilla consectetur. Aliquam ut magna nulla. Donec accumsan ex turpis, a mattis turpis dapibus ac. Aliquam erat volutpat. Integer mattis nibh ligula, quis convallis erat commodo vel. Maecenas feugiat feugiat felis, a venenatis est pharetra vitae. Praesent congue velit id pretium iaculis.
                       </p>
                     </tab-pane>
 
@@ -118,7 +118,7 @@
                       </template>
 
                       <p class="description">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Etiam pharetra orci leo, vitae ullamcorper leo faucibus a. Phasellus vel metus finibus, mattis magna sit amet, facilisis lorem. Donec placerat mollis sem, ut suscipit ex finibus vitae. Nullam ac tortor arcu. Donec consectetur mauris neque. Sed lobortis pellentesque tellus, a suscipit nisi elementum quis. Nunc at commodo justo. Sed leo mauris, varius at hendrerit nec, varius non leo. Quisque pulvinar luctus mi et placerat. Integer vel vehicula diam. Quisque quis tincidunt erat. Aliquam suscipit turpis sed lobortis eleifend. Maecenas pharetra risus a ultricies semper. Nunc id molestie metus. Sed hendrerit ex id turpis commodo, sed euismod nunc sollicitudin. Pellentesque orci risus, pharetra eu rutrum in, vehicula sed magna.
                       </p>
                     </tab-pane>
                   </card>

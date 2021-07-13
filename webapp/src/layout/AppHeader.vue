@@ -12,9 +12,9 @@
       <div class="row" slot="content-header" slot-scope="{ closeMenu }">
         <div class="col-6 collapse-brand">
           <a
-            href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
+            href="https://studioweb.digital"
           >
-            <img src="img/brand/blue.png" />
+            <img src="../assets/images/logoNome.png" />
           </a>
         </div>
         <div class="col-6 collapse-close">
