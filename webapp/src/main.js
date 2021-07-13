@@ -15,11 +15,31 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Argon from "./plugins/argon-kit";
 import './registerServiceWorker'
+import { BootstrapVue } from 'bootstrap-vue'
+import { BForm } from 'bootstrap-vue'
+
+import VMask from "v-mask";
+Vue.use(VMask);
+
+  
+
+
+Vue.component('b-form', BForm)
+
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+
+
+
 
 Vue.config.productionTip = false;
 Vue.use(Argon);
