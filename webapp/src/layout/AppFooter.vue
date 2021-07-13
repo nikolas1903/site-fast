@@ -36,10 +36,10 @@
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
-                            <a href="https://studioweb.digital" class="nav-link" target="_blank" rel="noopener">Studio Web Digital</a>
+                            <router-link href="/inicio" class="nav-link" target="_blank" rel="noopener">Studio Web Digital</router-link>
                         </li>
                         <li class="nav-item">
-                            <a href="https://studioweb.digital/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</a>
+                            <router-link to="/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</router-link>
                         </li>
                     </ul>
                 </div>
