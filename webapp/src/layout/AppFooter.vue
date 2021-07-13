@@ -36,7 +36,7 @@
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
-                            <router-link href="/inicio" class="nav-link" target="_blank" rel="noopener">Studio Web Digital</router-link>
+                            <router-link to="/inicio" class="nav-link" target="_blank" rel="noopener">Studio Web Digital</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</router-link>
