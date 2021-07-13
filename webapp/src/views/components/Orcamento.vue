@@ -25,145 +25,167 @@
             </div>
 
             <div class="mt-4 py-5">
-              <b-row>
-                <b-col md="6">
-                  <b-form-group
-                    name="nome"
-                    id="fieldset-1"
-                    label="Nome Completo:"
-                    label-for="input-1"
-                  >
-                    <b-form-input
-                      id="input-1"
-                      v-model="nome"
-                      :state="state"
-                      trim
-                    ></b-form-input>
-                  </b-form-group>
-                </b-col>
-
-                <b-col md="3">
-                  <b-form-group
-                    name="cpf"
-                    maxlength="14"
-                    id="fieldset-1"
-                    v-mask="'###.###.###-##'"
-                    label="CPF:"
-                    label-for="input-1"
-                  >
-                    <b-form-input
-                      id="input-1"
-                      v-model="cpf"
-                      :state="state"
-                      trim
-                    ></b-form-input>
-                  </b-form-group>
-                </b-col>
-
-                <b-col md="3">
-                  <b-form-group
-                    name="celular"
-                    id="fieldset-1"
-                    label="Telefone Celular:"
-                    label-for="input-1"
-                  >
-                    <b-form-input
-                      id="input-1"
-                      v-model="celular"
-                      :state="state"
-                      trim
-                    ></b-form-input>
-                  </b-form-group>
-                </b-col>
-
-                <b-col md="4">
-                  <b-form-group
-                    name="email"
-                    id="fieldset-1"
-                    label="E-Mail:"
-                    label-for="input-1"
-                  >
-                    <b-form-input
-                      id="input-1"
-                      v-model="email"
-                      :state="state"
-                      trim
-                    ></b-form-input>
-                  </b-form-group>
-                </b-col>
-
-                <b-col md="4">
-                  <b-form-group
-                    name="name"
-                    id="fieldset-1"
-                    label="Ramo do seu Negócio:"
-                    label-for="input-1"
-                  >
-                    <b-form-input
-                      id="input-1"
-                      v-model="name"
-                      :state="state"
-                      trim
-                    ></b-form-input>
-                  </b-form-group>
-                </b-col>
-
-                <b-col md="4">
-                  <b-form-group
-                    name="empresa"
-                    id="fieldset-1"
-                    label="Nome da Empresa:"
-                    label-for="input-1"
-                  >
-                    <b-form-input
-                      id="input-1"
-                      v-model="empresa"
-                      :state="state"
-                      trim
-                    ></b-form-input>
-                  </b-form-group>
-                </b-col>
-
-                <b-col md="4">
-                  <b-form-group label="Templates Preferidos:">
-                    <b-form-checkbox-group
-                      id="checkboxTemplates"
-                      v-model="selected"
-                      name="templates"
+              <form action="https://google.com" method="POST">
+                <b-row>
+                  <b-col md="6">
+                    <b-form-group
+                      name="nome"
+                      type="text"
+                      id="fieldset-1"
+                      label="Nome Completo:"
+                      label-for="input-1"
                     >
-                      <b-form-checkbox value="vegas"
-                        >Template Las Vegas</b-form-checkbox
-                      >
-                      <b-form-checkbox value="losAngeles"
-                        >Template Los Angeles</b-form-checkbox
-                      >
-                      <b-form-checkbox value="washington"
-                        >Template Washington</b-form-checkbox
-                      >
-                      <b-form-checkbox value="texas"
-                        >Template Texas</b-form-checkbox
-                      >
-                    </b-form-checkbox-group>
-                  </b-form-group>
-                </b-col>
+                      <b-form-input
+                        id="input-1"
+                        v-model="nome"
+                        :state="state"
+                        trim
+                      ></b-form-input>
+                    </b-form-group>
+                  </b-col>
 
-                <b-col md="8">
-                <b-form-group label="Alguma sugestão para a StudioWeb?">
-                  <b-form-textarea
-                    id="textarea"
-                    v-model="text"
-                    placeholder="Escreva algo..."
-                    rows="5"
-                    max-rows="6"
-                  ></b-form-textarea>
-                </b-form-group>
-                </b-col>
-              </b-row>
-              <div class="text-center" style="margin-top: 4%">
-              <base-button class="btn-1" type="primary"
-                >Solicitar Orçamento</base-button
-              >
+                  <b-col md="3">
+                    <b-form-group
+                      name="cpf"
+                      type="text"
+                      maxlength="14"
+                      id="fieldset-1"
+                      v-mask="'###.###.###-##'"
+                      label="CPF:"
+                      label-for="input-1"
+                    >
+                      <b-form-input
+                        id="input-1"
+                        v-model="cpf"
+                        :state="state"
+                        trim
+                      ></b-form-input>
+                    </b-form-group>
+                  </b-col>
+
+                  <b-col md="3">
+                    <b-form-group
+                      name="celular"
+                      type="text"
+                      id="fieldset-1"
+                      label="Telefone Celular:"
+                      label-for="input-1"
+                    >
+                      <b-form-input
+                        id="input-1"
+                        v-model="celular"
+                        :state="state"
+                        trim
+                      ></b-form-input>
+                    </b-form-group>
+                  </b-col>
+
+                  <b-col md="4">
+                    <b-form-group
+                      name="email"
+                      type="text"
+                      id="fieldset-1"
+                      label="E-Mail:"
+                      label-for="input-1"
+                    >
+                      <b-form-input
+                        id="input-1"
+                        v-model="email"
+                        :state="state"
+                        trim
+                      ></b-form-input>
+                    </b-form-group>
+                  </b-col>
+
+                  <b-col md="4">
+                    <b-form-group
+                      name="ramo"
+                      type="text"
+                      id="fieldset-1"
+                      label="Ramo do seu Negócio:"
+                      label-for="input-1"
+                    >
+                      <b-form-input
+                        id="input-1"
+                        v-model="ramo"
+                        :state="state"
+                        trim
+                      ></b-form-input>
+                    </b-form-group>
+                  </b-col>
+
+                  <b-col md="4">
+                    <b-form-group
+                      name="empresa"
+                      type="text"
+                      id="fieldset-1"
+                      label="Nome da Empresa:"
+                      label-for="input-1"
+                    >
+                      <b-form-input
+                        id="input-1"
+                        v-model="empresa"
+                        :state="state"
+                        trim
+                      ></b-form-input>
+                    </b-form-group>
+                  </b-col>
+
+                  <b-col md="4">
+                    <b-form-group label="Templates Preferidos:">
+                      <b-form-checkbox-group
+                        id="checkboxTemplates"
+                        v-model="selected"
+                        name="templates"
+                      >
+                        <b-form-checkbox value="vegas"
+                          >Template Las Vegas</b-form-checkbox
+                        >
+                        <b-form-checkbox value="losAngeles"
+                          >Template Los Angeles</b-form-checkbox
+                        >
+                        <b-form-checkbox value="washington"
+                          >Template Washington</b-form-checkbox
+                        >
+                        <b-form-checkbox value="texas"
+                          >Template Texas</b-form-checkbox
+                        >
+                      </b-form-checkbox-group>
+                    </b-form-group>
+                  </b-col>
+
+                  <b-col md="8">
+                    <b-form-group label="Alguma sugestão para a StudioWeb?">
+                      <b-form-textarea
+                        id="textarea"
+                        type="text"
+                        name="sugestao"
+                        v-model="sugestao"
+                        placeholder="Escreva algo..."
+                        rows="5"
+                        max-rows="6"
+                      ></b-form-textarea>
+                    </b-form-group>
+                  </b-col>
+                </b-row>
+                <div class="text-center" style="margin-top: 4%">
+                <button
+                  style="
+                    background-color: #330968;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  "
+                  class="btn-1"
+                  type="submit"
+                  >Solicitar Orçamento</button
+                >
               </div>
+              </form>
             </div>
           </div>
         </card>
