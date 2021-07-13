@@ -26,6 +26,7 @@
               Desenvolvendo de forma rápida a identidade visual da sua empresa!
             </p>
             <div class="btn-wrapper">
+              <router-link to="/portfolio">
               <base-button
                 tag="a"
                 href="#"
@@ -35,15 +36,22 @@
               >
                 Portfólio
               </base-button>
+              </router-link>
+
+              
+              <router-link to="/orcamento">
               <base-button
                 tag="a"
                 href="#"
+                style="margin-left: 2%"
                 class="mb-3 mb-sm-0"
                 type="white"
                 icon="fa fa-dollar"
               >
                 Faça um Orçamento
               </base-button>
+              </router-link>
+              
             </div>
           </div>
         </div>
