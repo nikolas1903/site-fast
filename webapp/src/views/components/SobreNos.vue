@@ -18,7 +18,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
-                  <a href="#">
+                  <a href="https://instagram.com/studioweb.digital" target="_blank">
                     <img
                       v-lazy="'img/theme/4918050.jpg'"
                       class="rounded-circle"
