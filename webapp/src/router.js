@@ -4,7 +4,9 @@ import Hero from "./views/components/Hero.vue";
 import Portfolio from "./views/components/Portfolio.vue";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
-import QuemSomos from "./views/components/QuemSomos.vue";
+import SobreNos from "./views/components/SobreNos.vue";
+import FaleConosco from "./views/components/FaleConosco.vue";
+import Orcamento from "./views/components/Orcamento.vue"
 
 Vue.use(Router);
 
@@ -33,7 +35,17 @@ export default new Router({
           name: "components",
           components: {
             header: AppHeader,
-            default: QuemSomos,
+            default: SobreNos,
+            footer: AppFooter
+          }
+        },
+
+        {
+          path: "/fale-conosco",
+          name: "components",
+          components: {
+            header: AppHeader,
+            default: FaleConosco,
             footer: AppFooter
           }
         },
@@ -44,6 +56,16 @@ export default new Router({
           components: {
             header: AppHeader,
             default: Portfolio,
+            footer: AppFooter
+          }
+        },
+
+        {
+          path: "/orcamento",
+          name: "components",
+          components: {
+            header: AppHeader,
+            default: Orcamento,
             footer: AppFooter
           }
         },
