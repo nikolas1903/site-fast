@@ -25,9 +25,14 @@ import Argon from "./plugins/argon-kit";
 import './registerServiceWorker'
 import { BootstrapVue } from 'bootstrap-vue'
 import { BForm } from 'bootstrap-vue'
-import VMask from "v-mask";
-Vue.use(VMask);
 
+
+
+
+
+
+import VueTheMask from 'vue-the-mask'
+Vue.use(VueTheMask)
   
 
 
