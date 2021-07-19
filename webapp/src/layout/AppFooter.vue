@@ -13,16 +13,16 @@
                        data-original-title="Siga a gente!">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a target="_blank" rel="noopener" href="https://twitter.com/studioweb.digital"
+                    <!-- <a target="_blank" rel="noopener" href="https://twitter.com/studioweb.digital"
                        class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip"
                        data-original-title="Siga a gente!">
                         <i class="fa fa-twitter"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://www.facebook.com/studioweb.digital"
+                    </a> -->
+                    <!-- <a target="_blank" rel="noopener" href="https://www.facebook.com/studioweb.digital"
                        class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip"
                        data-original-title="Siga a gente!">
                         <i class="fa fa-facebook-square"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <hr>
