@@ -13,13 +13,15 @@
       <span class="span-50"></span>
       <span class="span-100"></span>
     </div>
+    
     <div class="container shape-container d-flex align-items-center">
       <div class="col px-0">
         <div class="row justify-content-center align-items-center" style="margin-top: -13%">
           <div class="col-lg-8 text-center pt-lg">
+ 
             <img
               src="../../assets/images/logoNome.png"
-              style="width: 250px"
+              style="width: 360px"
               class="img-fluid"
             />
             <p class="lead text-white mt-4 mb-5">

@@ -40,7 +40,9 @@
                       <b-form-input
                         id="input-1"
                         type="text" 
+                        maxlength="50"
                         name="$name"
+                        required
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -49,16 +51,17 @@
                     <b-form-group
                       name="cpf"
                       type="text"
-                      maxlength="14"
                       id="fieldset-1"
-                      v-mask="'###.###.###-##'"
                       label="CPF:"
                       label-for="input-1"
                     >
                       <b-form-input
                         id="input-1"
                         name="$cpf"
-                        type="text" 
+                        type="text"
+                        maxlength="14"
+                        v-mask="'###.###.###-##'"
+                        required 
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -73,8 +76,11 @@
                     >
                       <b-form-input
                         id="input-1"
+                        maxlength="16"
+                        v-mask="'(##) # ####-####'"
                         name="$celular"
                         type="text" 
+                        required
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -90,7 +96,9 @@
                       <b-form-input
                         id="input-1"
                         type="text" 
+                        maxlength="40"
                         name="email"
+                        required
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -106,7 +114,9 @@
                       <b-form-input
                         id="input-1"
                         name="$ramo"
+                        maxlength="50"
                         type="text"
+                        required
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -122,7 +132,9 @@
                       <b-form-input
                         id="input-1"
                         name="$empresa"
+                        maxlength="50"
                         type="text"
+                        required
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -135,16 +147,40 @@
                         type="text"
                       >
                         <b-form-checkbox value="vegas"
-                          >Template Las Vegas</b-form-checkbox
-                        >
-                        <b-form-checkbox value="losAngeles"
-                          >Template Los Angeles</b-form-checkbox
-                        >
-                        <b-form-checkbox value="washington"
-                          >Template Washington</b-form-checkbox
+                          >Template Advogado Vegas</b-form-checkbox
                         >
                         <b-form-checkbox value="texas"
-                          >Template Texas</b-form-checkbox
+                          >Template Advogado Texas</b-form-checkbox
+                        >
+                        <b-form-checkbox value="washington"
+                          >Template Advogado Washington</b-form-checkbox
+                        >
+                        <b-form-checkbox value="london"
+                          >Template General London</b-form-checkbox
+                        >
+                        <b-form-checkbox value="paris"
+                          >Template Now Paris</b-form-checkbox
+                        >
+                        <b-form-checkbox value="dubai"
+                          >Template Argon Dubai</b-form-checkbox
+                        >
+                        <b-form-checkbox value="roma"
+                          >Template Mirko Roma</b-form-checkbox
+                        >
+                        <b-form-checkbox value="miami"
+                          >Template LandMark Miami</b-form-checkbox
+                        >
+                        <b-form-checkbox value="milao"
+                          >Template Spify Milão</b-form-checkbox
+                        >
+                        <b-form-checkbox value="cancun"
+                          >Template Restaurant Cancun</b-form-checkbox
+                        >
+                        <b-form-checkbox value="madrid"
+                          >Template Favison Madrid</b-form-checkbox
+                        >
+                        <b-form-checkbox value="moscou"
+                          >Template Gym Moscou</b-form-checkbox
                         >
                       </b-form-checkbox-group>
                     </b-form-group>
@@ -156,6 +192,7 @@
                         id="textarea"
                         type="text"
                         name="$sugestao"
+                        maxlength="500"
                         placeholder="Escreva algo..."
                         rows="5"
                         max-rows="6"
@@ -199,12 +236,7 @@ export default {
   data() {
     return {
       selected: [],
-      options: [
-        { text: "Template Vegas", value: "vegas" },
-        { text: "Template Los Angeles", value: "losAngeles" },
-        { text: "Template Washington", value: "washington" },
-        { text: "Template Texas", value: "texas" },
-      ],
+      options: [],
     };
   },
   components: {
