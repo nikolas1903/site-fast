@@ -30,12 +30,16 @@
                 class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center"
               >
                 <div class="card-profile-actions py-4 mt-lg-0">
+                  <a href="https://instagram.com/studioweb.digital">
                   <base-button type="info" size="sm" class="mr-4"
                     >Seguir</base-button
                   >
-                  <base-button type="default" size="sm" class="float-right"
+                  </a>
+                  <a href="https://instagram.com/studioweb.digital">
+                  <base-button  type="default" size="sm" class="float-right"
                     >Mensagem</base-button
                   >
+                  </a>
                 </div>
               </div>
               <div class="col-lg-4 order-lg-1">
@@ -87,7 +91,7 @@
                 </div>
               </div>
               <div class="container" style="width: 70%">
-                <tabs fill class="flex-column flex-md-row">
+                <!-- <tabs fill class="flex-column flex-md-row">
                   <card shadow slot-scope="{ activeTabIndex }">
                     <tab-pane key="tab1">
                       <template slot="title">
@@ -95,10 +99,7 @@
                       </template>
 
                       <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget elit eget metus dignissim pharetra. Nam condimentum velit justo, et bibendum nisi semper a. Sed interdum ut sapien id varius. Donec scelerisque suscipit justo. Sed et urna purus. Mauris iaculis aliquam mi, eget molestie velit ornare quis. Ut congue commodo neque, sit amet consequat ex laoreet a. Praesent condimentum hendrerit nisi sagittis tincidunt.
-                      </p>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget elit eget metus dignissim pharetra. Nam condimentum velit justo, et bibendum nisi semper a. Sed interdum ut sapien id varius. Donec scelerisque suscipit justo. Sed et urna purus. Mauris iaculis aliquam mi, eget molestie velit ornare quis. Ut congue commodo neque, sit amet consequat ex laoreet a. Praesent condimentum hendrerit nisi sagittis tincidunt.
+                        Promover soluções de qualidade, experiências inovadoras, com ética, comprometimento e respeito, visando reconhecimento nacional na área que nos encontramos.
                       </p>
                     </tab-pane>
 
@@ -117,12 +118,15 @@
                         <i class="fa fa-heart"> </i> Valores
                       </template>
 
-                      <p class="description">
-                        Etiam pharetra orci leo, vitae ullamcorper leo faucibus a. Phasellus vel metus finibus, mattis magna sit amet, facilisis lorem. Donec placerat mollis sem, ut suscipit ex finibus vitae. Nullam ac tortor arcu. Donec consectetur mauris neque. Sed lobortis pellentesque tellus, a suscipit nisi elementum quis. Nunc at commodo justo. Sed leo mauris, varius at hendrerit nec, varius non leo. Quisque pulvinar luctus mi et placerat. Integer vel vehicula diam. Quisque quis tincidunt erat. Aliquam suscipit turpis sed lobortis eleifend. Maecenas pharetra risus a ultricies semper. Nunc id molestie metus. Sed hendrerit ex id turpis commodo, sed euismod nunc sollicitudin. Pellentesque orci risus, pharetra eu rutrum in, vehicula sed magna.
+                      <p class="description" >
+                        • Responsabilidade;<br>
+                        • Ética;<br>
+                        • Criatividade;<br>
+                        • Agilidade;<br>
                       </p>
                     </tab-pane>
                   </card>
-                </tabs>
+                </tabs> -->
               </div>
             </div>
           </div>
