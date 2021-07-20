@@ -11,52 +11,123 @@
         <span></span>
       </div>
     </section>
-    
 
     <section class="section section-skew">
-      <div class="container">
-        <card shadow class="card-profile mt--300" no-body>
-          <div class="px-4">
-            <div class="text-center mt-5">
-              <h3>Studio Web</h3>
-              <div class="h6 font-weight-300">
-                <i class="ni location_pin mr-1"></i>Porto Alegre, Rio Grande do
-                Sul
-              </div>
-              <div class="h6 mt-4">
-                <i class="ni business_briefcase-24 mr-2"></i>Desenvolvimento de
-                Aplicações Web
-              </div>
+      <div class="container" style="margin-top: -8%">
+
+        <div class="px-4">
+          <div class="mt-4 py-5">
+            <form action="https://api.staticforms.xyz/submit" method="POST">
+              <input
+                type="hidden"
+                name="accessKey"
+                value="eb172090-6ae5-4b51-9759-bdf00d2a8de0"
+              />
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="https://sitestudioweb.herokuapp.com/"
+              />
+              <b-row>
+                <b-col md="6">
+                  <b-form-group
+                    name="Nome"
+                    type="text"
+                    id="fieldset-1"
+                    label="Nome: "
+                    label-for="input-1"
+                  >
+                    <b-form-input
+                      id="input-1"
+                      type="text"
+                      maxlength="50"
+                      name="$name"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col md="3">
+                  <b-form-group
+                    name="celular"
+                    type="text"
+                    id="fieldset-1"
+                    label="Telefone Celular:"
+                    label-for="input-1"
+                  >
+                    <b-form-input
+                      id="input-1"
+                      maxlength="16"
+                      v-mask="'(##) # ####-####'"
+                      name="$celular"
+                      type="text"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
+                </b-col>
+
+                <b-col md="3">
+                  <b-form-group
+                    name="email"
+                    type="mail"
+                    id="fieldset-1"
+                    label="E-Mail:"
+                    label-for="input-1"
+                  >
+                    <b-form-input
+                      id="input-1"
+                      type="text"
+                      maxlength="40"
+                      name="email"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
+                </b-col>
+              </b-row>
+
+              <b-row>
+                <b-col md="6">
+                  <b-form-group label="Digite uma mensagem para nós!">
+                    <b-form-textarea
+                      id="textarea"
+                      type="text"
+                      name="$sugestao"
+                      maxlength="500"
+                      placeholder="Escreva algo..."
+                      rows="5"
+                      max-rows="6"
+                    ></b-form-textarea>
+                  </b-form-group>
+                </b-col>
+              </b-row>
+
               <div>
-                <i class="ni education_hat mr-2"></i>Desenvolvimento de
-                Aplicativos Mobile
+                <button
+                  style="
+                    background-color: #330968;
+                    border: none;
+                    color: white;
+
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 15px;
+                    border-radius: 12px;
+                    width: 80px;
+                    height: 40px;
+                  "
+                  class="btn-1"
+                  type="submit"
+                >
+                  Enviar!
+                </button>
               </div>
-            </div>
-            <div class="mt-5 py-5 border-top text-center">
-              <div class="row justify-content-center">
-                <div class="col-lg-9">
-                  <h2 class="mb-4">Quem Somos?</h2>
-                  <p>
-                    Somos uma agência digital especializada no desenvolvimento
-                    de sites, apps e sistemas Web, ajudando sua empresa a ter
-                    maior visibilidade dentro do mercado.<br /><br />
-                    Nós da Studio Web Digital, dispomos de sólidos conhecimentos e
-                    planejamento para projetos Web e Mobile, e contamos com um
-                    time capacitado e forte para fazer o seu negócio bombar
-                    ainda mais!
-                  </p>
-                  <hr />
-                </div>
-              </div>
-              
-            </div>
+            </form>
           </div>
-        </card>
+        </div>
       </div>
     </section>
-        
-
-        
   </div>
 </template>
 
@@ -67,11 +138,16 @@
 import Tabs from "@/components/Tabs/Tabs.vue";
 import TabPane from "@/components/Tabs/TabPane.vue";
 export default {
+  data() {
+    return {
+      selected: [],
+      options: [],
+    };
+  },
   components: {
     Tabs,
     TabPane,
   },
 };
 </script>
-<style>
-</style>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

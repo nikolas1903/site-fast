@@ -21,7 +21,7 @@
  
             <img
               src="../../assets/images/logoNome.png"
-              style="width: 360px"
+              style="width: 60%"
               class="img-fluid"
             />
             <p class="lead text-white mt-4 mb-5">

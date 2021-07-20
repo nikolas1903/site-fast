@@ -5,7 +5,7 @@
         <img
           src="../assets/images/logoNome.png"
           alt="logo"
-          style="height: 250px"
+          style="height: 350px"
         />
       </router-link>
 
@@ -96,16 +96,17 @@
         </li> -->
 
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <router-link
-            to="/fale-conosco"
+          <a
+            href="https://api.whatsapp.com/send?phone=5551991508987&text=Olá! Gostaria de informações sobre os serviços!"
             rel="noopener"
             class="btn btn-neutral btn-icon"
+            target="_blank"
           >
             <span class="btn-inner--icon">
               <i class="fa fa-headphones mr-2"></i>
             </span>
             <span class="nav-link-inner--text">Fale conosco!</span>
-          </router-link>
+          </a>
         </li>
       </ul>
     </base-nav>

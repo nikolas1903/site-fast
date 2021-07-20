@@ -211,6 +211,7 @@
                     text-decoration: none;
                     display: inline-block;
                     font-size: 16px;
+                    border-radius: 12px
                   "
                   class="btn-1"
                   type="submit"
