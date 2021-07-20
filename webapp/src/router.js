@@ -23,7 +23,6 @@ export default new Router({
       children: [
         {
           path: "/inicio",
-          name: "components",
           components: {
             header: AppHeader,
             default: Hero,
@@ -33,7 +32,6 @@ export default new Router({
 
         {
           path: "/sobre-nos",
-          name: "components",
           components: {
             header: AppHeader,
             default: SobreNos,
@@ -43,7 +41,6 @@ export default new Router({
 
         {
           path: "/fale-conosco",
-          name: "components",
           components: {
             header: AppHeader,
             default: FaleConosco,
@@ -53,7 +50,6 @@ export default new Router({
 
         {
           path: "/portfolio",
-          name: "components",
           components: {
             header: AppHeader,
             default: Portfolio,
@@ -63,7 +59,6 @@ export default new Router({
 
         {
           path: "/orcamento",
-          name: "components",
           components: {
             header: AppHeader,
             default: Orcamento,
@@ -73,7 +68,6 @@ export default new Router({
 
         {
           path: "/sucesso",
-          name: "components",
           components: {
             header: AppHeader,
             default: Sucesso,
