@@ -41,6 +41,9 @@
                         <li class="nav-item">
                             <router-link to="/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link to="/admin" class="nav-link" target="_blank" rel="noopener">Painel de Administradores</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -33,24 +33,21 @@
           <span class="nav-link-inner--text">Sobre Nós</span>
         </router-link>
 
-        <base-dropdown tag="li" class="nav-item">
+        <base-dropdown>
+        
           <a
             slot="title"
-            href="#"
             class="nav-link"
-            data-toggle="dropdown"
             role="button"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5551991508987&text=Olá! Gostaria de informações sobre os serviços!"
           >
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Conteúdo</span>
+            <span class="nav-link-inner--text">Fale Conosco</span>
           </a>
-          <router-link to="/landing" class="dropdown-item">Landing</router-link>
-          <router-link to="/profile" class="dropdown-item">Profile</router-link>
-          <router-link to="/login" class="dropdown-item">Login</router-link>
-          <router-link to="/register" class="dropdown-item"
-            >Register</router-link
           >
         </base-dropdown>
+
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
@@ -96,17 +93,17 @@
         </li> -->
 
         <li class="nav-item d-none d-lg-block ml-lg-4">
+          <router-link to="/login">
           <a
-            href="https://api.whatsapp.com/send?phone=5551991508987&text=Olá! Gostaria de informações sobre os serviços!"
             rel="noopener"
             class="btn btn-neutral btn-icon"
-            target="_blank"
           >
             <span class="btn-inner--icon">
-              <i class="fa fa-headphones mr-2"></i>
+              <i class="fa fa-user mr-2"></i>
             </span>
-            <span class="nav-link-inner--text">Fale conosco!</span>
+            <span class="nav-link-inner--text">Login</span>
           </a>
+          </router-link>
         </li>
       </ul>
     </base-nav>

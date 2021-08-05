@@ -6,14 +6,16 @@ import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import SobreNos from "./views/components/SobreNos.vue";
 import FaleConosco from "./views/components/FaleConosco.vue";
-import Orcamento from "./views/components/Orcamento.vue"
 import Sucesso from "./views/components/Sucesso.vue";
+import Login from "./views/Login.vue";
+import CreateOrcamento from "./views/components/Orcamento.vue"
+import ListOrcamento from "./views/ListOrcamento.vue"
 
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
-  linkActiveClass: "open",
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
@@ -29,7 +31,6 @@ export default new Router({
             footer: AppFooter
           }
         },
-
         {
           path: "/sobre-nos",
           components: {
@@ -38,7 +39,6 @@ export default new Router({
             footer: AppFooter
           }
         },
-
         {
           path: "/fale-conosco",
           components: {
@@ -47,7 +47,6 @@ export default new Router({
             footer: AppFooter
           }
         },
-
         {
           path: "/portfolio",
           components: {
@@ -56,16 +55,6 @@ export default new Router({
             footer: AppFooter
           }
         },
-
-        {
-          path: "/orcamento",
-          components: {
-            header: AppHeader,
-            default: Orcamento,
-            footer: AppFooter
-          }
-        },
-
         {
           path: "/sucesso",
           components: {
@@ -74,6 +63,29 @@ export default new Router({
             footer: AppFooter
           }
         },
+        {
+          path: "/login",
+          components: {
+            default: Login,
+          }
+        },
+        {
+          path: "/orcamento",
+          components: {
+            header: AppHeader,
+            default: CreateOrcamento,
+            footer: AppFooter
+          }
+        },
+        {
+          path: "/orcamentos",
+          components: {
+            header: AppHeader,
+            default: ListOrcamento,
+            footer: AppFooter
+          }
+        },
+
       ],
     }
   ],

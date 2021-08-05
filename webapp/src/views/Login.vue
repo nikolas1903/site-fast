@@ -1,81 +1,62 @@
 <template>
-    <section class="section section-shaped section-lg my-0">
-        <div class="shape shape-style-1 bg-gradient-default">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="container pt-lg-md">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <card type="secondary" shadow
-                          header-classes="bg-white pb-5"
-                          body-classes="px-lg-5 py-lg-5"
-                          class="border-0">
-                        <template>
-                            <div class="text-muted text-center mb-3">
-                                <small>Sign in with</small>
-                            </div>
-                            <div class="btn-wrapper text-center">
-                                <base-button type="neutral">
-                                    <img slot="icon" src="img/icons/common/github.svg">
-                                    Github
-                                </base-button>
+  <section class="section-hero section-shaped my-0">
+    <div class="shape shape-style-1 shape-primary">
+      <span class="span-150"></span>
+      <span class="span-50"></span>
+      <span class="span-50"></span>
+      <span class="span-75"></span>
+      <span class="span-100"></span>
+      <span class="span-75"></span>
+      <span class="span-50"></span>
+      <span class="span-100"></span>
+      <span class="span-50"></span>
+      <span class="span-100"></span>
+    </div>
+    <div class="container pt-lg-md">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <card
+            type="secondary"
+            shadow
+            header-classes="bg-white pb-5"
+            body-classes="px-lg-5 py-lg-5"
+            class="border-0"
+          >
+            <template>
+              <div class="text-center text-muted mb-4">
+                <small>Painel de Administradores</small>
+              </div>
+              <form role="form" method="POST">
+                <b-form-input alternative class="mb-3" placeholder="Usuário" name="usuario">
+                </b-form-input>
+                <b-form-input alternative type="password" placeholder="Senha" name="senha">
+                </b-form-input>
 
-                                <base-button type="neutral">
-                                    <img slot="icon" src="img/icons/common/google.svg">
-                                    Google
-                                </base-button>
-                            </div>
-                        </template>
-                        <template>
-                            <div class="text-center text-muted mb-4">
-                                <small>Or sign in with credentials</small>
-                            </div>
-                            <form role="form">
-                                <base-input alternative
-                                            class="mb-3"
-                                            placeholder="Email"
-                                            addon-left-icon="ni ni-email-83">
-                                </base-input>
-                                <base-input alternative
-                                            type="password"
-                                            placeholder="Password"
-                                            addon-left-icon="ni ni-lock-circle-open">
-                                </base-input>
-                                <base-checkbox>
-                                    Remember me
-                                </base-checkbox>
-                                <div class="text-center">
-                                    <base-button type="primary" class="my-4">Sign In</base-button>
-                                </div>
-                            </form>
-                        </template>
-                    </card>
-                    <div class="row mt-3">
-                        <div class="col-6">
-                            <a href="#" class="text-light">
-                                <small>Forgot password?</small>
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <a href="#" class="text-light">
-                                <small>Create new account</small>
-                            </a>
-                        </div>
-                    </div>
+                <div class="text-center">
+                  <button class="btn-2" type="submit">Login</button>
                 </div>
-            </div>
+              </form>
+            </template>
+          </card>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 <script>
 export default {};
 </script>
 <style>
+.btn-2 {
+  background-color: #330968;
+  border: none;
+  margin-top: 10%;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+}
 </style>
