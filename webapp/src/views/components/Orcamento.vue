@@ -25,9 +25,23 @@
             </div>
 
             <div class="mt-4 py-5">
-              <form action="https://api.staticforms.xyz/submit" method="POST">
-              <input type="hidden" name="accessKey" value="eb172090-6ae5-4b51-9759-bdf00d2a8de0"> 
-              <input type="hidden" name="redirectTo" value="https://sitestudioweb.herokuapp.com/">
+              <form
+                name="formOrcamento"
+                method="POST"
+                action="/sucesso"
+              >
+                <!-- 
+                  action="https://api.staticforms.xyz/submit"
+                  <input
+                  type="hidden"
+                  name="accessKey"
+                  value="eb172090-6ae5-4b51-9759-bdf00d2a8de0"
+                />
+                <input
+                  type="hidden"
+                  name="redirectTo"
+                  value="https://studioweb.digital/sucesso"
+                /> -->
                 <b-row>
                   <b-col md="6">
                     <b-form-group
@@ -39,9 +53,9 @@
                     >
                       <b-form-input
                         id="input-1"
-                        type="text" 
+                        type="text"
                         maxlength="50"
-                        name="$name"
+                        name="nome"
                         required
                       ></b-form-input>
                     </b-form-group>
@@ -57,11 +71,11 @@
                     >
                       <b-form-input
                         id="input-1"
-                        name="$cpf"
+                        name="cpf"
                         type="text"
                         maxlength="14"
                         v-mask="'###.###.###-##'"
-                        required 
+                        required
                       ></b-form-input>
                     </b-form-group>
                   </b-col>
@@ -78,8 +92,8 @@
                         id="input-1"
                         maxlength="16"
                         v-mask="'(##) # ####-####'"
-                        name="$celular"
-                        type="text" 
+                        name="celular"
+                        type="text"
                         required
                       ></b-form-input>
                     </b-form-group>
@@ -95,7 +109,7 @@
                     >
                       <b-form-input
                         id="input-1"
-                        type="text" 
+                        type="text"
                         maxlength="40"
                         name="email"
                         required
@@ -113,7 +127,7 @@
                     >
                       <b-form-input
                         id="input-1"
-                        name="$ramo"
+                        name="ramo"
                         maxlength="50"
                         type="text"
                         required
@@ -131,7 +145,7 @@
                     >
                       <b-form-input
                         id="input-1"
-                        name="$empresa"
+                        name="empresa"
                         maxlength="50"
                         type="text"
                         required
@@ -143,7 +157,7 @@
                     <b-form-group label="Templates Preferidos:">
                       <b-form-checkbox-group
                         id="checkboxTemplates"
-                        name="$templates"
+                        name="templates"
                         type="text"
                       >
                         <b-form-checkbox value="vegas"
@@ -191,7 +205,7 @@
                       <b-form-textarea
                         id="textarea"
                         type="text"
-                        name="$sugestao"
+                        name="sugestao"
                         maxlength="500"
                         placeholder="Escreva algo..."
                         rows="5"
@@ -201,23 +215,10 @@
                   </b-col>
                 </b-row>
                 <div class="text-center" style="margin-top: 4%">
-                <button
-                  style="
-                    background-color: #330968;
-                    border: none;
-                    color: white;
-                    padding: 15px 32px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    border-radius: 12px
-                  "
-                  class="btn-1"
-                  type="submit"
-                  >Solicitar Orçamento</button
-                >
-              </div>
+                  <button class="btn-1" type="submit">
+                    Solicitar Orçamento
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -229,11 +230,11 @@
 
 
 
-
 <script>
 import Tabs from "@/components/Tabs/Tabs.vue";
 import TabPane from "@/components/Tabs/TabPane.vue";
 export default {
+
   data() {
     return {
       selected: [],
@@ -247,3 +248,16 @@ export default {
 };
 </script>
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
+<style>
+.btn-1 {
+  background-color: #330968;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+</style>
