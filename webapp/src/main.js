@@ -21,14 +21,15 @@ import App from "./App.vue";
 import router from "./router";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'sweetalert2/dist/sweetalert2.min.css';
 import Argon from "./plugins/argon-kit";
 import './registerServiceWorker'
 import { BootstrapVue } from 'bootstrap-vue'
 import { BForm } from 'bootstrap-vue'
 
+import VueSweetalert2 from 'vue-sweetalert2';
 
-
-
+Vue.use(VueSweetalert2);
 
 
 import VueTheMask from 'vue-the-mask'
