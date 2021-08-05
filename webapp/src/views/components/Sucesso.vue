@@ -1,47 +1,60 @@
 <template>
-    <section class="section section-lg section-shaped overflow-hidden my-0">
-        <div class="shape shape-style-1 shape-default shape-skew">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="container py-0 pb-lg">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
-                    <p class="lead text-white mt-4">Argon Design System comes with four pre-built pages to help you get
-                        started faster. You can change the text and images and you're good to go.</p>
-                    <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
-                       class="btn btn-white mt-4">See all components</a>
-                </div>
-                <div class="col-lg-6 mb-lg-auto">
-                    <div class="rounded shadow-lg overflow-hidden transform-perspective-right">
-                        <b-carousel id="carousel1"
-                                    controls
-                                    indicators>
-                            <!-- Text slides with image -->
-                            <b-carousel-slide img-src="img/theme/img-1-1200x1000.jpg"></b-carousel-slide>
-                            <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg"></b-carousel-slide>
-                        </b-carousel>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="profile-page">
+    <section class="section-profile-cover section-shaped my-0">
+      <div class="shape shape-style-1 shape-primary shape-skew alpha-4">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </section>
-</template>
-<script>
-import { BCarousel } from "bootstrap-vue/esm/components/carousel/carousel";
-import { BCarouselSlide } from "bootstrap-vue/esm/components/carousel/carousel-slide";
 
+    <section class="section section-skew">
+      <div class="container" style="margin-top: -25%">
+        <card shadow class="card-profile mt--300" no-body>
+          <div class="px-4">
+            <div class="text-center mt-5">
+              <h2 class="display-3">Agradecemos seu contato! </h2>
+              <!-- <div>
+                <i class="ni education_hat mr-2"></i>Desenvolvimento de
+                Aplicativos Mobile
+              </div> -->
+            </div>
+            <hr />
+            <div class="text-center mt-4 py-5">
+              <img
+                style="margin-top: -8%; height: 200px"
+                src="../../assets/images/service_4.gif"
+              />
+              <p class="lead text-muted">Em até dois dias úteis entraremos em contato <br>com seu orçamento completo!</p>
+            </div>
+          </div>
+        </card>
+      </div>
+    </section>
+  </div>
+</template>
+
+
+
+
+<script>
+import Tabs from "@/components/Tabs/Tabs.vue";
+import TabPane from "@/components/Tabs/TabPane.vue";
 export default {
+  data() {
+    return {
+      selected: [],
+      options: [],
+    };
+  },
   components: {
-    BCarousel,
-    BCarouselSlide
-  }
+    Tabs,
+    TabPane,
+  },
 };
 </script>
-<style>
-</style>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
