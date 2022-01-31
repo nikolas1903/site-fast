@@ -30,7 +30,7 @@
                 class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center"
               >
                 <div class="card-profile-actions py-4 mt-lg-0">
-                  <a href="https://instagram.com/studioweb.digital">
+                  <a href="https://www.instagram.com/accounts/login/?next=%2Fstudioweb.digital%2F&source=follow">
                   <base-button type="info" size="sm" class="mr-4"
                     >Seguir</base-button
                   >
@@ -49,7 +49,7 @@
                     <span class="description">Publicações</span>
                   </div>
                   <div>
-                    <span class="heading">1.670</span>
+                    <span class="heading">3.764</span>
                     <span class="description">Seguidores</span>
                   </div>
                   <div>

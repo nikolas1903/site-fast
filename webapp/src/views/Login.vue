@@ -14,7 +14,7 @@
     </div>
     <div class="container pt-lg-md">
       <div class="row justify-content-center">
-        <div class="col-lg-5">
+        <div class="col-lg-5" style="margin-top: 20%">
           <card
             type="secondary"
             shadow
@@ -26,14 +26,28 @@
               <div class="text-center text-muted mb-4">
                 <small>Painel de Administradores</small>
               </div>
-              <form role="form" method="POST">
-                <b-form-input alternative class="mb-3" placeholder="Usuário" name="usuario">
+              <form @submit.prevent="logar">
+                <b-form-input
+                  alternative
+                  class="mb-3"
+                  placeholder="Usuário"
+                  required
+                  name="usuario"
+                  v-model="login.login"
+                >
                 </b-form-input>
-                <b-form-input alternative type="password" placeholder="Senha" name="senha">
+                <b-form-input
+                  alternative
+                  type="password"
+                  placeholder="Senha"
+                  name="senha"
+                  required
+                  v-model="login.senha"
+                >
                 </b-form-input>
 
                 <div class="text-center">
-                  <button class="btn-2" type="submit">Login</button>
+                  <button class="btn-2">Login</button>
                 </div>
               </form>
             </template>
@@ -44,7 +58,35 @@
   </section>
 </template>
 <script>
-export default {};
+import Usuario from "../services/usuario";
+
+export default {
+  data() {
+    return {
+      login: {
+        login: "",
+        senha: "",
+      },
+    };
+  },
+
+  methods: {
+    logar() {
+      Usuario.login(this.login).then((response) => {
+        if (response.data.success == true) {
+          this.$toastr.s(response.data.message);
+          localStorage.setItem("ACCESS_GRANTEED", "ACCESS_GRANTEED");
+          this.$router.push("/orcamentos");
+        } else {
+          this.$toastr.e(response.data.message);
+          this.login.senha = "";
+          this.login.login = "";
+          localStorage.setItem("ACCESS_GRANTEED", "ACCESS_DENIED");
+        }
+      });
+    },
+  },
+};
 </script>
 <style>
 .btn-2 {

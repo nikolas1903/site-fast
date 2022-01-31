@@ -31,6 +31,7 @@
                     <div class="copyright">
                         &copy; {{year}}
                         <a href="https://studioweb.digital" target="_blank" rel="noopener">Studio Web Digital - Desenvolvimento de Softwares</a>
+                        <br><a href="https://studioweb.digital" target="_blank" rel="noopener">Cnpj 44.943.172/0001-74</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -42,7 +43,7 @@
                             <router-link to="/sobre-nos" class="nav-link" target="_blank" rel="noopener">Sobre Nós</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/admin" class="nav-link" target="_blank" rel="noopener">Painel de Administradores</router-link>
+                            <router-link to="/orcamentos" class="nav-link" target="_blank" rel="noopener">Painel de Administradores</router-link>
                         </li>
                     </ul>
                 </div>

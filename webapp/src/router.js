@@ -89,6 +89,9 @@ export default new Router({
       ],
     }
   ],
+
+
+
   scrollBehavior: to => {
     if (to.hash) {
       return { selector: to.hash };

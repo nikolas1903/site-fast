@@ -26,9 +26,11 @@ import Argon from "./plugins/argon-kit";
 import './registerServiceWorker'
 import { BootstrapVue } from 'bootstrap-vue'
 import { BForm } from 'bootstrap-vue'
+import Toastr from 'vue-toastr';
 
 import VueSweetalert2 from 'vue-sweetalert2';
 
+Vue.use(Toastr);
 Vue.use(VueSweetalert2);
 
 

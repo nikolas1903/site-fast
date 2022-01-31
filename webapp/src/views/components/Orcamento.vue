@@ -18,44 +18,21 @@
           <div class="px-4">
             <div class="text-center mt-5">
               <h2>Faça seu Orçamento!</h2>
-              <!-- <div>
-                <i class="ni education_hat mr-2"></i>Desenvolvimento de
-                Aplicativos Mobile
-              </div> -->
             </div>
 
             <div class="mt-4 py-5">
-              <form
-                name="formOrcamento"
-                method="POST"
-                action="/sucesso"
-              >
-                <!-- 
-                  action="https://api.staticforms.xyz/submit"
-                  <input
-                  type="hidden"
-                  name="accessKey"
-                  value="eb172090-6ae5-4b51-9759-bdf00d2a8de0"
-                />
-                <input
-                  type="hidden"
-                  name="redirectTo"
-                  value="https://studioweb.digital/sucesso"
-                /> -->
+              <form @submit.prevent="cadastrar">
                 <b-row>
                   <b-col md="6">
                     <b-form-group
                       name="Nome"
                       type="text"
-                      id="fieldset-1"
                       label="Nome Completo:"
-                      label-for="input-1"
                     >
                       <b-form-input
-                        id="input-1"
                         type="text"
                         maxlength="50"
-                        name="nome"
+                        v-model="orcamento.nome"
                         required
                       ></b-form-input>
                     </b-form-group>
@@ -74,6 +51,7 @@
                         name="cpf"
                         type="text"
                         maxlength="14"
+                        v-model="orcamento.cpf"
                         v-mask="'###.###.###-##'"
                         required
                       ></b-form-input>
@@ -93,6 +71,7 @@
                         maxlength="16"
                         v-mask="'(##) # ####-####'"
                         name="celular"
+                        v-model="orcamento.telefone"
                         type="text"
                         required
                       ></b-form-input>
@@ -112,6 +91,7 @@
                         type="text"
                         maxlength="40"
                         name="email"
+                        v-model="orcamento.email"
                         required
                       ></b-form-input>
                     </b-form-group>
@@ -128,6 +108,7 @@
                       <b-form-input
                         id="input-1"
                         name="ramo"
+                        v-model="orcamento.ramo"
                         maxlength="50"
                         type="text"
                         required
@@ -146,6 +127,7 @@
                       <b-form-input
                         id="input-1"
                         name="empresa"
+                        v-model="orcamento.nomeEmpresa"
                         maxlength="50"
                         type="text"
                         required
@@ -157,43 +139,44 @@
                     <b-form-group label="Templates Preferidos:">
                       <b-form-checkbox-group
                         id="checkboxTemplates"
+                        v-model="orcamento.templates"
                         name="templates"
                         type="text"
                       >
-                        <b-form-checkbox value="vegas"
+                        <b-form-checkbox value=" Vegas"
                           >Template Advogado Vegas</b-form-checkbox
                         >
-                        <b-form-checkbox value="texas"
+                        <b-form-checkbox value=" Texas"
                           >Template Advogado Texas</b-form-checkbox
                         >
-                        <b-form-checkbox value="washington"
+                        <b-form-checkbox value=" Washington"
                           >Template Advogado Washington</b-form-checkbox
                         >
-                        <b-form-checkbox value="london"
+                        <b-form-checkbox value=" London"
                           >Template General London</b-form-checkbox
                         >
-                        <b-form-checkbox value="paris"
+                        <b-form-checkbox value=" Paris"
                           >Template Now Paris</b-form-checkbox
                         >
-                        <b-form-checkbox value="dubai"
+                        <b-form-checkbox value=" Dubai"
                           >Template Argon Dubai</b-form-checkbox
                         >
-                        <b-form-checkbox value="roma"
+                        <b-form-checkbox value=" Roma"
                           >Template Mirko Roma</b-form-checkbox
                         >
-                        <b-form-checkbox value="miami"
+                        <b-form-checkbox value=" Miami"
                           >Template LandMark Miami</b-form-checkbox
                         >
-                        <b-form-checkbox value="milao"
+                        <b-form-checkbox value=" Milao"
                           >Template Spify Milão</b-form-checkbox
                         >
-                        <b-form-checkbox value="cancun"
+                        <b-form-checkbox value=" Cancun"
                           >Template Restaurant Cancun</b-form-checkbox
                         >
-                        <b-form-checkbox value="madrid"
+                        <b-form-checkbox value=" Madrid"
                           >Template Favison Madrid</b-form-checkbox
                         >
-                        <b-form-checkbox value="moscou"
+                        <b-form-checkbox value=" Moscou"
                           >Template Gym Moscou</b-form-checkbox
                         >
                       </b-form-checkbox-group>
@@ -210,6 +193,7 @@
                         placeholder="Escreva algo..."
                         rows="5"
                         max-rows="6"
+                        v-model="orcamento.sugestao"
                       ></b-form-textarea>
                     </b-form-group>
                   </b-col>
@@ -233,13 +217,37 @@
 <script>
 import Tabs from "@/components/Tabs/Tabs.vue";
 import TabPane from "@/components/Tabs/TabPane.vue";
-export default {
+import OrcamentoService from "../../services/orcamentos";
 
+export default {
   data() {
     return {
       selected: [],
       options: [],
+      orcamento: {
+        nome: "",
+        cpf: "",
+        telefone: "",
+        email: "",
+        ramo: "",
+        nomeEmpresa: "",
+        templates: [],
+        sugestao: "",
+      },
     };
+  },
+  methods: {
+    cadastrar() {
+      OrcamentoService.cadastrar(this.orcamento).then((response) => {
+        if (response.data.success == true) {
+          this.$toastr.s(response.data.message);
+
+          this.$router.push("/sucesso");
+        } else {
+          this.$toastr.e(response.data.message);
+        }
+      });
+    },
   },
   components: {
     Tabs,
